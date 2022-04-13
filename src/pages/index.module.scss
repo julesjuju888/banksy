@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import '../styles/variables.scss';
+
+.titleIndex {
+    margin-top: 30px;
+    font-family: 'Monoton', cursive;
+    font-weight: 400;
+    color: red;
+
+    font-size: 16px;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 76px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 196px;
+    }
+}
+
+hr {
+    color: red;
+}
