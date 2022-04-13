@@ -28,10 +28,10 @@ const IndexPage = () => {
               works
               through a detailed analysis.
             </p>
-            <video controls width="960" height="540" autoPlay muted>
+            {/* <video controls width="960" height="540" autoPlay muted>
               <source src={BanksyVideo} type="video/mp4" />
               <p className="warning">Your browser does not support HTML5 video.</p>
-            </video>
+            </video> */}
 
             <br /> <br />  <br /> <br />
           </div>
