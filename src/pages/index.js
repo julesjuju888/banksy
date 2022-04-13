@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Layout from '../components/Layout/Layout';
 import * as styles from './index.module.scss';
-import BanksyVideo from '../video/video-presentation.mp4'
+//import BanksyVideo from '../video/video-presentation.mp4'
 
 // markup
 const IndexPage = () => {
