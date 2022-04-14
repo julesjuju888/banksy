@@ -68,7 +68,7 @@ const IndexPage = () => {
               Apparently British and active since the 1990s, he uses stencil painting to convey
               his messages, which often mix politics, humor and poetry.
             </p>
-            <a href={`/biography`} className='btn btn-lg btn-dark'>
+            <a href={`/biography`} className='btn btn-lg btn-danger'>
               Check his biography
             </a>
           </div>
@@ -83,7 +83,7 @@ const IndexPage = () => {
               and would often get caught in the act.
               Stencils allow him to work much faster on site, as some of the work can be done in advance.
             </p>
-            <a href={`/gallery`} className='btn btn-lg btn-dark'>
+            <a href={`/gallery`} className='btn btn-lg btn-danger'>
               Check our selected artworks explained
             </a>
           </div>
