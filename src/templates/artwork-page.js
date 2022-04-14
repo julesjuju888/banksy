@@ -17,15 +17,12 @@ export default function ArtworkPage({ data }) {
         <div className='row justify-content-center'>
           <div className='col-12 col-md-10 col-lg-8'>
             <h1 className={styles.titleIndex}>{page.title}</h1>
-            <div className='text-center'>
+            <div className='text-center mb-5'>
               <img src={page.image.fluid.src} className='img-fluid' />
             </div>
-            <br /> <br />
-            <p>
-              {page.description.value.document.children[0].children[0].value}
-            </p>
+
             {paragraphs.map((item, index) => (
-              <div key={index}>{item?.children[0]?.value}</div>
+              <p key={index}>{item?.children[0]?.value}</p>
             ))}
           </div>
         </div>
