@@ -40,9 +40,11 @@ const GalleryPage = ({ data }) => {
 
 export default GalleryPage;
 
-{
-  /* GraphQL Query: you can check http://localhost:8000/___graphql to see all available data  */
-}
+/*
+  GraphQL Query:
+  you can check http://localhost:8000/___graphql
+  to see all available data
+*/
 export const query = graphql`
   query AllOeuvres {
     allDatoCmsOeuvre {
