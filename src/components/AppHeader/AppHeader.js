@@ -1,10 +1,16 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import BanksyLogo from '../../images/banksy-logo.png';
+import * as styles from './AppHeader.module.scss';
 
 const AppHeader = () => (
-  <Navbar className='shadow' bg='light' expand='lg' fixed="top">
+  <Navbar className='shadow' bg='light' expand='lg' fixed='top'>
     <Container>
-      <Navbar.Brand href='/'>BANKSY</Navbar.Brand>
+      <Navbar.Brand href='/'>
+        <div className={styles.logo}>
+          <img src={BanksyLogo} alt='Logo Banksy' className='img-fluid' />
+        </div>
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav' className='justify-content-end'>
         <Nav>

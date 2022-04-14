@@ -8,7 +8,6 @@ module.exports = {
       resolve: 'gatsby-source-datocms',
       options: {
         apiToken: 'a147e817cf391074ccdf897b3b59de',
-        //apiToken: '904bd47ea621ab372a9f1be89fac67',
       },
     },
     'gatsby-plugin-sass',
@@ -24,6 +23,12 @@ module.exports = {
         path: './src/images/',
       },
       __key: 'images',
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/images/banksy-picto-browser.png',
+      },
     },
   ],
 };
