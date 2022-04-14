@@ -12,13 +12,17 @@ const GalleryPage = ({ data }) => {
   } = data;
   return (
     <Layout>
+      {/* Helmet is used to define the SEO page metas (title, description, etc..) */}
       <Helmet>
         <meta charSet='utf-8' />
         <title>Gallery</title>
       </Helmet>
+
+      {/* Main Bootstrap container: required to define grids (.row > .col)  */}
       <div className='container'>
         <PageTitle title='Gallery' />
         <div className='row py-3'>
+          {/* Loop javascript: it reads an array of data and associates iteratively the data to the component  */}
           {edges.map((item) => (
             <ArtworkCard
               key={item.node.id}
@@ -36,6 +40,9 @@ const GalleryPage = ({ data }) => {
 
 export default GalleryPage;
 
+{
+  /* GraphQL Query: you can check http://localhost:8000/___graphql to see all available data  */
+}
 export const query = graphql`
   query AllOeuvres {
     allDatoCmsOeuvre {

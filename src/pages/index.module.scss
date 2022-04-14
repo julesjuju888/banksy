@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import '../styles/variables.scss';
 
+// ================
+// Title index page
+// ================
 .titleIndex {
   font-size: 56px;
   color: $rougeBanksy;
@@ -19,10 +22,9 @@
   }
 }
 
-hr {
-  color: red;
-}
-
+// ================
+// Responsive video wrapper
+// ================
 .videoResponsive {
   overflow: hidden;
   padding-bottom: 56.25%;

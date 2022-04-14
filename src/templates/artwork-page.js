@@ -7,18 +7,24 @@ import PageTitle from '../components/PageTitle/PageTitle';
 import { Carousel } from 'react-bootstrap';
 
 export default function ArtworkPage({ data }) {
+  // Associate specific data to a variable (speed optimisation)
   const page = data.datoCmsOeuvre;
   const paragraphs = page.description.value.document.children;
-
   const allDatoCmsOeuvre = data.allDatoCmsOeuvre.edges;
+
   return (
     <Layout>
+      {/* Helmet is used to define the SEO page metas (title, description, etc..) */}
       <Helmet>
         <meta charSet='utf-8' />
         <title>Gallery: {page.title}</title>
       </Helmet>
+
+      {/* Main Bootstrap container: required to define grids (.row > .col)  */}
       <div className='container mb-5'>
         <PageTitle title={page.title} />
+
+        {/* Artwork content coming from DatoCMS  */}
         <div className='row justify-content-center mb-5 pb-5'>
           <div className='col-12 col-md-10 col-lg-8'>
             <div className='text-center mb-5'>
@@ -34,6 +40,8 @@ export default function ArtworkPage({ data }) {
             ))}
           </div>
         </div>
+
+        {/* Carousel to link to other explained artworks */}
         <div className='row justify-content-center'>
           <Carousel className='text-center' variant='dark'>
             {allDatoCmsOeuvre.map((item, index) => (
@@ -62,6 +70,9 @@ export default function ArtworkPage({ data }) {
   );
 }
 
+{
+  /* GraphQL Query: you can check http://localhost:8000/___graphql to see all available data  */
+}
 export const query = graphql`
   query ($slug: String!) {
     datoCmsOeuvre(slug: { eq: $slug }) {

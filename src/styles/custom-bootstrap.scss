@@ -1,15 +1,18 @@
+// ================
+// Bootstrap variables customisation
+// ================
 $grid-gutter-width: 32px;
-$modal-content-bg: transparent;
-// $modal-backdrop-bg: $BrandNavy;
 $red: $rougeBanksy;
 
-$container-max-widths: (sm: 95%,
+$container-max-widths: (
+  sm: 95%,
   md: 94.45%,
   lg: 95%,
   xl: 1440px,
 );
 
-$grid-breakpoints: (xs: 0,
+$grid-breakpoints: (
+  xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -18,4 +21,12 @@ $grid-breakpoints: (xs: 0,
 
 $headings-font-weight: 700;
 
+// ================
+// To see the source, CTRL + click sur le lien
+// Never ever ever modity anything inside it
+// once opened you should find variable
+// once you find the right one
+// copy the variable name
+// and customise its value just above
+// ================
 @import '~bootstrap/scss/bootstrap.scss';

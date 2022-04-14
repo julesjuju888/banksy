@@ -2,17 +2,19 @@ import * as React from 'react';
 import Layout from '../components/Layout/Layout';
 import * as styles from './index.module.scss';
 import { Helmet } from 'react-helmet';
-//import BanksyVideo from '../video/video-presentation.mp4'
 import CardLinkGallery from '../images/card-link-gallery.jpg';
 
 // markup
 const IndexPage = () => {
   return (
     <Layout>
+      {/* Helmet is used to define the SEO page metas (title, description, etc..) */}
       <Helmet>
         <meta charSet='utf-8' />
         <title>Homepage</title>
       </Helmet>
+
+      {/* Main Bootstrap container: required to define grids (.row > .col)  */}
       <div className='container'>
         <div className='row'>
           <div className='col-12'>
@@ -20,6 +22,7 @@ const IndexPage = () => {
           </div>
         </div>
 
+        {/* Section Welcome */}
         <section className='row mb-5 pb-5'>
           <div className='col-12 col-md-6'>
             <h2>Welcome</h2>
@@ -46,6 +49,7 @@ const IndexPage = () => {
           </div>
         </section>
 
+        {/* Section Who is Banksy */}
         <section className='row mb-5 pb-5'>
           <div className='col-12 col-md-6'>
             <div className={styles.videoResponsive}>
@@ -75,6 +79,7 @@ const IndexPage = () => {
           </div>
         </section>
 
+        {/* Section Banksy artwork */}
         <section className='row align-content-center'>
           <div className='col-12 col-md-6 mb-4'>
             <h2>Banksy artwork</h2>
