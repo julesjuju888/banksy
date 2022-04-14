@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import BanksyLogo from '../../images/banksy-logo.png';
+import BanksyLogo from '../../images/banksy-logo.jpg';
 import * as styles from './AppHeader.module.scss';
 
 const AppHeader = () => (
