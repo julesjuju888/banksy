@@ -63,10 +63,11 @@ const IndexPage = () => {
           <div className='col-12 col-md-6 order-first order-md-last mb-4'>
             <h2>Who is Banksy?</h2>
             <p>
-              Banksy is a street art artist who works under a pseudonym.
-              His real name and exact identity are unknown and still subject to speculation.
-              Apparently British and active since the 1990s, he uses stencil painting to convey
-              his messages, which often mix politics, humor and poetry.
+              Banksy is a street art artist who works under a pseudonym. His
+              real name and exact identity are unknown and still subject to
+              speculation. Apparently British and active since the 1990s, he
+              uses stencil painting to convey his messages, which often mix
+              politics, humor and poetry.
             </p>
             <a href={`/biography`} className='btn btn-lg btn-danger'>
               Check his biography
@@ -74,14 +75,15 @@ const IndexPage = () => {
           </div>
         </section>
 
-        <section className='row'>
+        <section className='row align-content-center'>
           <div className='col-12 col-md-6 mb-4'>
             <h2>Banksy artwork</h2>
             <p>
-              Banksy uses the stencil technique for almost all his works.
-              In his book Wall and Piece, Banksy explains this decision: he used to work slowly when he first started out,
-              and would often get caught in the act.
-              Stencils allow him to work much faster on site, as some of the work can be done in advance.
+              Banksy uses the stencil technique for almost all his works. In his
+              book Wall and Piece, Banksy explains this decision: he used to
+              work slowly when he first started out, and would often get caught
+              in the act. Stencils allow him to work much faster on site, as
+              some of the work can be done in advance.
             </p>
             <a href={`/gallery`} className='btn btn-lg btn-danger'>
               Check our selected artworks explained
