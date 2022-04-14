@@ -7,24 +7,26 @@ import PageTitle from '../components/PageTitle/PageTitle';
 import { Carousel } from 'react-bootstrap';
 
 export default function ArtworkPage({ data }) {
-  console.log("DATA COMPONENT");
-  console.log(data)
   const page = data.datoCmsOeuvre;
   const paragraphs = page.description.value.document.children;
 
-  const allDatoCmsOeuvre = data.allDatoCmsOeuvre.edges
+  const allDatoCmsOeuvre = data.allDatoCmsOeuvre.edges;
   return (
     <Layout>
       <Helmet>
         <meta charSet='utf-8' />
         <title>Gallery: {page.title}</title>
       </Helmet>
-      <div className='container'>
+      <div className='container mb-5'>
         <PageTitle title={page.title} />
-        <div className='row justify-content-center'>
+        <div className='row justify-content-center mb-5 pb-5'>
           <div className='col-12 col-md-10 col-lg-8'>
             <div className='text-center mb-5'>
-              <img src={page.image.fluid.src} className='img-fluid' alt={page.title} />
+              <img
+                src={page.image.fluid.src}
+                className='img-fluid'
+                alt={page.title}
+              />
             </div>
 
             {paragraphs.map((item, index) => (
@@ -33,21 +35,26 @@ export default function ArtworkPage({ data }) {
           </div>
         </div>
         <div className='row justify-content-center'>
-          <Carousel className='text-center' variant="dark">
-
+          <Carousel className='text-center' variant='dark'>
             {allDatoCmsOeuvre.map((item, index) => (
               <Carousel.Item interval={1000}>
                 <div className={styles.imageCaroussel}>
-                  <img src={item.node.image.fluid.src} className='img-fluid' alt={item.node.title} />
+                  <img
+                    src={item.node.image.fluid.src}
+                    className='img-fluid'
+                    alt={item.node.title}
+                  />
                 </div>
                 <Carousel.Caption>
-                  <a href={`/gallery/${item.node.slug}`} className='btn btn-sm btn-danger'>
+                  <a
+                    href={`/gallery/${item.node.slug}`}
+                    className='btn btn-sm btn-danger'
+                  >
                     {item.node.title}
                   </a>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
-
           </Carousel>
         </div>
       </div>
@@ -78,7 +85,7 @@ export const query = graphql`
             fluid {
               src
             }
-          }    
+          }
         }
       }
     }
