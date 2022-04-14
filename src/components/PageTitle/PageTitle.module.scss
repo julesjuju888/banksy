@@ -1,12 +1,12 @@
 @import '../../styles/variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 
 .pageTitle {
   font-size: 56px;
+  font-family: 'Saira Stencil One', cursive;
   color: $rougeBanksy;
-  margin: 30px 0 20px;
-  font-family: 'Zilla Slab Highlight', cursive;
   text-align: center;
+  margin: 30px 0 20px;
 
   @media (min-width: $breakpoint-tablet) {
     margin: 50px 0 40px;
@@ -15,6 +15,6 @@
 
   @media (min-width: $breakpoint-desktop) {
     margin: 70px 0 60px;
-    font-size: 196px;
+    font-size: 96px;
   }
 }

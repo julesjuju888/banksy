@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout/Layout';
 import { Helmet } from 'react-helmet';
 import * as styles from './artwork-page.module.scss';
+import PageTitle from '../components/PageTitle/PageTitle';
 
 export default function ArtworkPage({ data }) {
   const page = data.datoCmsOeuvre;
@@ -14,9 +15,9 @@ export default function ArtworkPage({ data }) {
         <title>Gallery: {page.title}</title>
       </Helmet>
       <div className='container'>
+        <PageTitle title={page.title} />
         <div className='row justify-content-center'>
           <div className='col-12 col-md-10 col-lg-8'>
-            <h1 className={styles.titleIndex}>{page.title}</h1>
             <div className='text-center mb-5'>
               <img src={page.image.fluid.src} className='img-fluid' />
             </div>
