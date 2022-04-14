@@ -78,11 +78,10 @@ const IndexPage = () => {
           <div className='col-12 col-md-6 mb-4'>
             <h2>Banksy artwork</h2>
             <p>
-              Urban art is a growing phenomenon that has been present in our
-              lives for many years. In the streets, on the walls, on trains, on
-              trucks, we find everywhere works of urban art. Our site is
-              interested in a pioneer of this medium: Banksy. You will be able
-              to discover his works through a detailed analysis.
+              Banksy uses the stencil technique for almost all his works.
+              In his book Wall and Piece, Banksy explains this decision: he used to work slowly when he first started out,
+              and would often get caught in the act.
+              Stencils allow him to work much faster on site, as some of the work can be done in advance.
             </p>
             <a href={`/gallery`} className='btn btn-lg btn-dark'>
               Check our selected artworks explained
