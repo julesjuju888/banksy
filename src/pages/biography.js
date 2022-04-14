@@ -51,7 +51,7 @@ const BiographyPage = () => {
               </p>
             </section>
             <section className='mb-5'>
-              <h2>Some striking Banksy positions</h2>
+              <h2>A prolific artist</h2>
               <p>
                 In 2004, he printed counterfeit banknotes bearing the effigy of
                 Lady Di, replacing the Bank of England with Banksy of England,
