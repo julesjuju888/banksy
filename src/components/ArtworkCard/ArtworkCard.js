@@ -6,10 +6,12 @@ const ArtworkCard = ({ title, slug, text, image }) => (
   <div className='col-12 col-md-4  pb-3'>
     <div className='card'>
       <div className='card-body'>
-        <img className='img-fluid' src={image} />
+        <img className='img-fluid' src={image} alt={title} />
         <h5 className={styles.cardTitle}>{title}</h5>
         <p className={styles.lieux}>{text}</p>
-        <a href={`/gallery/${slug}`} className='btn btn-dark'>Analyse</a>
+        <a href={`/gallery/${slug}`} className='btn btn-dark'>
+          Analyse
+        </a>
       </div>
     </div>
   </div>

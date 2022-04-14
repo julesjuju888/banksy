@@ -27,12 +27,6 @@ export default function ArtworkPage({ data }) {
             {paragraphs.map((item, index) => (
               <div key={index}>{item?.children[0]?.value}</div>
             ))}
-            <br /> <br />
-            {/* <section>
-          <pre>
-            <code>{JSON.stringify(paragraphs, null, 2)}</code>
-          </pre>
-        </section> */}
           </div>
         </div>
       </div>

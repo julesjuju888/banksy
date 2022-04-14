@@ -9,10 +9,10 @@ const AppFooter = () => (
           <small>This site was created for non-profit purposes</small>
         </div>
         <div className='col-12 col-md-4'>
-          <h1>this site was created for non-profit purposes</h1>
+          <small>This site was created for non-profit purposes</small>
         </div>
         <div className='col-12 col-md-4'>
-          <h1>this site was created for non-profit purposes</h1>
+          <small>This site was created for non-profit purposes</small>
         </div>
       </div>
     </div>
