@@ -3,6 +3,7 @@ import Layout from '../components/Layout/Layout';
 import PageTitle from '../components/PageTitle/PageTitle';
 import { Helmet } from 'react-helmet';
 
+// Images
 import BanksyAnonym from '../images/banksy-anonyme.jpg';
 import BanksyBristol from '../images/bristol.jpeg';
 import BanksyDianaBanknote from '../images/diana-banksy.jpeg';
